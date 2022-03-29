@@ -1,0 +1,50 @@
+INTRODUCAO AO GIT E O GITHUB
+_______________________________________________________
+
+1- INICIAR UM REPOSITORIO GIT
+2- INICIAR O VERSIONAMENTO DE CODIGO
+3- CRIAR UM COMMIT 
+
+______________________________________________________
+
+1- GIT INIT <> iniciar o git
+
+2- GIT ADD <>versionamento
+
+3- GIT COMMIT
+
+OBS: PARA TRABALHAR NO TERMINAL COLOCA-SE O NOME DO PROGRAMA NA FRENTE!
+     TODO COMANDODO GIT, LEVA A PARAVRA GIT NA FRENTE DO COMANDO (EX: GIT ADD)
+ls >< listar
+ls -a (para listar pastar  ocultas)
+mk dir <> Make director (criar pasta)
+git config <> user.email
+git config <> user.name
+git add *
+git commit -m ""
+GIT STATUS <> MONITORA O STATUS DO ARQUIVO.
+__________________________________________________
+
+#Ciclo de vida#
+
+DENTRO DE TRACKED (OS ARQUIVOS QUE SÃO DE FATO RASTREADOS PELO GIT) EXISTEM 3 ESTAGIOS:
+
+<> O arquivo que estava untracked (o git ainda não tinha conhecimento dele). rodamos o GIT ADD (logo o arquivo saiu de untraked direto para stage, momento em que ele esta aguardando alguma coisa, esperando para entrar no palco.)
+
+1- Unmodified <> arquivo que ainda não foi modificado (o GIT compara o SHA1 dos arquivos buscando modificações. ao encontrar o arquivo modificacao ele muda de unmodified para modified)
+
+2- Modified <> é o arquivo unmodified que sofreu alteração. ele muda automaticamente de unmodifie para modified. (Ao rodar novamente o GIT ADD em um arquivo modified ele vai para o STAGED (area especial, aguardando uma outra acao)
+
+3- Staged <> é onde ficam os arquivos que estão se preparando para fazer outro tipo de grupamento. (os arquivos estao se preparando para um COMMIT <> ENVELOPA COM SIGNIFICANCIAS. RETORNANDO ESSES ARQUIVOS PARA UNMODIFIED (acabei com as alteraçoes, esta salvo dentro do commit, e voltam para unmodified.
+
+*AMBIENTE DE DESENVOLVIMENTO*
+
+1- WORKING DIRECTORY <> 
+
+2- STAGING AREA
+
+3- LOCAL REPOSITORY <> somente composto por commits (nao é possivel mandar para remote repository arquivos nao commitados
+
+*SERVIDOR*
+
+4- REMOTE REPOSITORY
